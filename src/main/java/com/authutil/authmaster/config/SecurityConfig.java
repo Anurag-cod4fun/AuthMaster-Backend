@@ -74,6 +74,7 @@ public class SecurityConfig {
                         request.getRequestURI().equals("/api/auth/refresh");
 //        csrf.requireCsrfProtectionMatcher(refreshMatcher)
 //                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+        // TODO: learn csrf
         http
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .csrf(csrf -> csrf.disable())
